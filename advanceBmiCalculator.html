@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Bmi Calculator</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var a=prompt("Enter your weight in kg:");
+    var b=prompt("Enter your height in m:");
+
+    function bmiCalculator(weight,height){
+        var bmi=(weight/(height^2));
+        if(bmi<18.5)
+        return "your bmi is"+" "+bmi+","+"so you are underweight";
+         if(bmi>=18.5 && bmi<=24.9)
+        return "your bmi is"+" "+bmi+","+"so you have normalweight";
+         if(bmi>24.9)
+        return "your bmi is"+" "+bmi+","+"so you are overweight";
+        
+    }
+
+    var message=bmiCalculator(a,b);
+     alert(message);
+
+
+</script>
+</html>
